@@ -53,3 +53,25 @@ The portfolio was built on Twitter's <a href="http://getbootstrap.com/">Bootstra
 
 * <a href="http://getbootstrap.com/css/">Bootstrap's CSS Classes</a>
 * <a href="http://getbootstrap.com/components/">Bootstrap's Components</a>
+
+
+## Optimization Results
+
+### Part 1
+
+#### PageSpeed optimization
+
+The following optimization has been performed on the page
+
+1. Included Above the fold Css  in order to load the page without waiting Css load.
+1. Resized Thumbnails for the Pizzeria.jpg. The image size has been drastically reduced.
+1. Load of webfonts is performed by a script at the bottom of the body.
+
+### Part 2
+
+#### 60fps challange
+
+The major problem on the main.js file were:
+
+1. The calculation of the offset at every cycle loop
+2. Usage of querySelector and querySelectorAll inside loop.
